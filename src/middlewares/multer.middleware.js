@@ -8,7 +8,7 @@ const storage = multer.diskStorage({
     cb(null, "./public/temp");
   },
   filename: function (req, file, cd) {
-    cd(null, file.originalname + nanoid);
+    cd(null, file.originalname + id);
     console.log(cd);
   },
 });
