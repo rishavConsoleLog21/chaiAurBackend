@@ -1,6 +1,6 @@
 import mongoose, { Schema } from "mongoose";
 
-const subscription = new Schema(
+const subscriptionSchema = new Schema(
   {
     subscriber: {
     //NOTE: One who is subscribing
@@ -15,4 +15,4 @@ const subscription = new Schema(
   { timestamps: true }
 );
 
-export const Subscription = mongoose.models("Subscription", subscription);
+export const Subscription = mongoose.models("Subscription", subscriptionSchema);
